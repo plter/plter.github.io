@@ -32,13 +32,13 @@ categories: kotlin
     cinterop -def hello.def -copt -I. -o hello
     ```
     其中-I指的是头文件目录，-o指的是输出名字，该命令执行后将生成目录结构如下图所示
-    ![/_posts/images/201708/screenshots/001.png](/_posts/images/201708/screenshots/001.png)   
+    ![images/201708/screenshots/001.png](images/201708/screenshots/001.png)   
 6. 执行如下命令用于生成本机库(native library)文件  
     ```shell
     clang -c hello.c -o hello.bc -emit-llvm
     ```
     该命令将生成hello.bc文件，如下图所示  
-    ![/_posts/images/201708/screenshots/002.png](/_posts/images/201708/screenshots/002.png)  
+    ![images/201708/screenshots/002.png](images/201708/screenshots/002.png)  
 7. 创建main.kt文件，在其中输入如下代码  
     ```kotlin
     import hello.*
@@ -53,6 +53,6 @@ categories: kotlin
     ```
     该代码将生成main.kexe文件  
 9. 执行该文件，将会看到输出信息，效果如下图所示
-    ![/_posts/images/201708/screenshots/003.png](/_posts/images/201708/screenshots/003.png) 
+    ![images/201708/screenshots/003.png](images/201708/screenshots/003.png) 
     
     
